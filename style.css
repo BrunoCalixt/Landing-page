@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul li a{
+    text-decoration: none;
+
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+header{
+    background-color: #faedee;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: 000000;
+}
+
+header .list-items {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a{
+    color: #d9adae;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+.apresentacao{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.apresentacao .text-apresentacao {
+    min-width: 200px;
+}
+
+.text-apresentacao h1{
+    color: #d9adae;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #d9adae;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height:50px;
+}
+
+.imagem{
+    height: 400px;
+    justify-content: space-between;
+    width: auto;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    
+}
+
+
+.imagem2{
+    padding-right: 20px;
+    margin: 1px;
+    position: relative;
+    bottom: 65px;
+    min-width: 420px;
+    
+}
+
+#quemsomos h2{
+    font-size: 32px;
+    color: #d9adae;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quemsomos h2::before{
+    content: "";
+    height: 30px;
+    width: 5px;
+    background-color:#d9adae;
+    position: relative;
+}
+
+#quemsomos{
+    margin-bottom: 10px;
+    
+    
+}
+
+.container-externo{
+    background-color: #d9adae;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .items-servicos{
+    text-align: center;
+}
+
+.items-servicos a{
+    width: 220px;
+    background-color:#fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #d9adae;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.items-servicos p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+#planos h2{
+    font-size: 32px;
+    color: #d9adae;
+}
+.list-planos{
+    display:flex ;
+    align-items: flex-end;
+}
+
+.item-plano{
+    flex: 1;
+    border: 5px solid #d9adae;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.item-plano .btn {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3{
+    font-size: 24px;
+    color: #d9adae;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-plano h3::after{
+    content: "";
+    background-color: #d9adae;
+    height: 3px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    margin-bottom: 10px;
+}
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #d9adae;
+    margin-right: 5px;
+}
+
+footer{
+    background-color: #d9adae;
+
+}
+
+footer .footer{
+    justify-content: space-between;
+    height: 70px;
+    color: #fff;
+    align-items: center;
+}
+
+/* mobile */
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        width:100%;
+    }
+    #quemsmos{
+        flex-direction: column-reverse;
+    }
+    #quemsmos img{
+        min-width: 320px;
+        margin: auto;
+    }
+    .list-servicos{
+        flex-direction: column;
+    }
+    .items-servicos img{
+        width: 50%;
+        margin: auto;
+    }
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: auto;
+    }
+}
